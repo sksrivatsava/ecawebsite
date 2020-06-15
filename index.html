@@ -1,0 +1,168 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <style>
+         *{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+h2{
+  color:midnightblue;
+}
+    </style>
+    
+    <body>
+        <div class="header"><h1><b>ECA : EMERGING COMPUTERS ARENA</b></h1></div>
+        <div class="topnav">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">ACTIVITES</a>
+          <a href="#">EVENTS</a>
+        </div>
+        <div class="show" >The first-of-its kind website for geeks in SNIST</div>
+        <div class="show">Explore yourselves!</div>
+        <div class ="show">Get into the universe of computers........</div>
+        
+        <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("show");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); 
+                
+                }
+                
+        </script>
+                
+                
+        <div class="row">
+            <div class="column side">
+              <h2 style="color:midnightblue">COURSES OFFERED</h2>
+              <div class="sidenav">
+                
+                <a href="#">Web Development</a>
+                <a href="#">DSA</a>
+                <a href="#">Artificial Intelligence and Machine Learning</a>
+                <a href="#">Data Analytics</a>
+              </div>
+              
+            </div>
+            
+            <div class="column middle">
+            
+              <h2 style="color: #FC00BC;">Main Content</h2>
+              <p style="font-weight: bold;">---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+              <div class="trans">
+                  <h4 style="color: darkmagenta;">CONNECT WITH SENIORS</h4>
+                  <div id="facility1button1"><img src=download.png width="80px" height="80px"></div>
+              </div>
+              <div class="trans">
+                  <h4 style="color: darkmagenta;">EXPLORE COURSES</h4>
+                  <div id="facility1button1"><img src=course.jpg width="80px" height="80px"></div>
+              </div>
+              <div class="trans">
+                  <h4 style="color: darkmagenta;">CLUB ACTIVITIES</h4>
+                  <div id="facility1button1"><img src=activites.png width="80px" height="80px"></div>
+              </div>
+             <div>
+                 <h4></h4>
+             </div>
+            </div>
+            
+            <div class="column side">
+              <h2>Registration form</h2>
+              <h2>Login Form</h2>
+
+<form action="/action_page.php" method="post" ">
+  
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+<form action="/action_page.php" style="border:1px solid #ccc;">
+  <div class="container">
+    <h2>Sign Up</h2>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+              
+              
+            </div>
+          </div>
+          <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+        
+        
+    </body>
+</html>
